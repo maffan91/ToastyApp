@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.maffan.toastyapp.MainActivity">
+
+    <Button
+        android:text="Success"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/error_button"
+        android:layout_alignLeft="@+id/error_button"
+        android:layout_alignStart="@+id/error_button"
+        android:layout_marginTop="11dp"
+        android:id="@+id/success_button" />
+
+    <Button
+        android:text="Warning"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/success_button"
+        android:layout_alignLeft="@+id/success_button"
+        android:layout_alignStart="@+id/success_button"
+        android:layout_marginTop="10dp"
+        android:id="@+id/warning_button" />
+
+    <Button
+        android:text="Info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:id="@+id/info_button"
+        android:layout_below="@+id/warning_button"
+        android:layout_alignLeft="@+id/warning_button"
+        android:layout_alignStart="@+id/warning_button" />
+
+    <Button
+        android:text="Normal (no icon)"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/normal_no_icon_button"
+        android:layout_marginTop="11dp"
+        android:layout_below="@+id/normal_icon_button"
+        android:layout_alignLeft="@+id/normal_icon_button"
+        android:layout_alignStart="@+id/normal_icon_button" />
+
+    <Button
+        android:text="Error"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/error_button"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:text="Normal (icon)"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:id="@+id/normal_icon_button"
+        android:layout_below="@+id/info_button"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+</RelativeLayout>
